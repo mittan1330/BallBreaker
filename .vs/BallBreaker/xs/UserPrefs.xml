@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{55F7391B-7912-D4C2-4242-1F08286591F4}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Manager/Const.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GameManagerView.cs" Line="69" Column="35" />
+      <File FileName="Assets/Scripts/GameManagerModel.cs" Line="109" Column="1" />
+      <File FileName="Assets/Scripts/GameManagerPresenter.cs" Line="2" Column="23" />
+      <File FileName="Assets/Scripts/PlayerManagerModel.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/Manager/Const.cs" Line="7" Column="33" NotebookId="1" />
+      <File FileName="Assets/Scripts/BallManagerModel.cs" Line="35" Column="36" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BallBreaker" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Manager" expanded="True">
+                  <Node name="Const.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="722d17cb-054e-4352-95e8-df764eefa1f4" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
