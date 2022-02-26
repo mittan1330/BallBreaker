@@ -1,8 +1,9 @@
 public class Const
 {
-    /// <summary> ステージの縦横の長さ </summary>
+    /// <summary> ゲームがプレイ中かを判断する静的変数 </summary>
     public static bool isPlay = true;
-    // ボールの移動の速さを指定する変数
+    /// <summary> ボールの移動の速さを指定する定数 </summary>
     public const float ballSpeed = 5.0f;
+    /// <summary> プレイヤーの移動の速さを指定する定数 </summary>
     public const float wallSpeed = 7.0f;
 }
