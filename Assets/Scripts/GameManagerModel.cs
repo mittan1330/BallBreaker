@@ -6,24 +6,37 @@ using UnityEngine.SceneManagement;
 
 public class GameManagerModel : MonoBehaviour
 {
+    /// <summary> ゲームのスコアを代入する変数 </summary>
     int score;
+    /// <summary> ゲームの時間を代入する変数 </summary>
     [SerializeField] float timer = 100;
+    /// <summary> ゲームに残ったブロックの数を代入する変数 </summary>
     int remainBlock = 0;
+    /// <summary> ゲームでブロックを破壊でコンボした回数を代入する変数 </summary>
     int comboCount = 0;
 
+    //TODO:以下の部分はModelにあるのはまずそう
+    /// <summary> ブロックを破壊した際のパーティクルを代入する変数 </summary>
     [SerializeField] GameObject destroyBlockParticle;
+    /// <summary> パーティクルを生成する親にあたるTransformを指定する変数 </summary>
     [SerializeField] Transform particlePosition;
+    /// <summary> ゲームオーバーのパーティクルを代入する変数 </summary>
     [SerializeField] GameObject gameOverParticle;
+    /// <summary> ボールへ追従するパーティクルを代入する変数 </summary>
     [SerializeField] GameObject ballParticle;
+    /// <summary> ボールのゲームオブジェクトを代入する変数 </summary>
     [SerializeField] GameObject ball;
 
 
     // PostProcessに関する制御変数
+    /// <summary> ボールのゲームオブジェクトを代入する変数 </summary>
     public bool isBreakBlock = false;
+    /// <summary> ボールのゲームオブジェクトを代入する変数 </summary>
     public bool isBreakBlockMax = false;
+    /// <summary>PostProcessの値を指定する変数 </summary>
     float postProcessValue = 0;
 
-
+    // C# Action
     public event Action<int> OnChangeScore;
     public event Action<int> OnChangeHighScore;
     public event Action<int> OnChangeRemainBlock;
@@ -36,15 +49,13 @@ public class GameManagerModel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
-        Const.isPlay = true;
-        remainBlock = 66;
-        OnChangeHighScore?.Invoke(ScoreController.Instance.GetHighScore());
+        Initialize();
     }
 
     // Update is called once per frame
     void Update()
     {
+        // ブロックが破壊された際にPostProcess演出の値を計算して反映用の関数を実行
         if (isBreakBlock)
         {
             if (isBreakBlockMax == true)
@@ -66,7 +77,7 @@ public class GameManagerModel : MonoBehaviour
     }
 
     /// <summary> 
-    /// スコア計算のロジック
+    /// スコア計算してViewへ反映するロジック
     /// </summary>
     public void SetScore(int addScore)
     {
@@ -74,34 +85,51 @@ public class GameManagerModel : MonoBehaviour
         OnChangeScore?.Invoke(score);
     }
 
+    /// <summary> 
+    /// タイマーを計算してViewへ反映するロジック
+    /// </summary>
     public void SetTimer(float deltaTime)
     {
         timer -= deltaTime;
         OnChangeTime?.Invoke(timer);
     }
 
-    public void SetComboCount(int count)
+    /// <summary>
+	/// ゲームのコンボ回数をリセットする際の処理
+	/// </summary>
+    public void SetComboCount()
     {
-        comboCount = count;
+        comboCount = 0;
     }
 
+    /// <summary>
+	/// ゲームに残ったブロックの数をViewへ反映する関数
+	/// </summary>
     public void SetRemainBlock(int block)
     {
         OnChangeRemainBlock?.Invoke(block);
     }
 
+    /// <summary>
+	/// ゲームオーバーになった際の処理
+	/// </summary>
     public void IsGameOver(string status)
     {
-        
         OnSetGameOverText?.Invoke(status);
         OnSetUiAnimation?.Invoke("isGameOver");
     }
 
+    /// <summary>
+	/// ゲームをリスタートする際の処理
+	/// </summary>
     public void OnGameRestart()
     {
         SceneManager.LoadScene("Main");
     }
 
+    /// <summary>
+	/// ブロックが破壊された際の処理
+	/// </summary>
     public void DestroyBlock(GameObject targetBlock)
     {
         remainBlock--;
@@ -118,7 +146,9 @@ public class GameManagerModel : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+	/// ゲームが終了した際の処理
+	/// </summary>
     void GameEnd(string status)
     {
         Instantiate(gameOverParticle, ball.transform.position, Quaternion.identity);
@@ -129,8 +159,22 @@ public class GameManagerModel : MonoBehaviour
         OnGameEnd?.Invoke();
     }
 
+    /// <summary>
+	/// ゲームオーバーの際の処理
+	/// </summary>
     public void GameOver()
     {
         GameEnd("GAME OVER");
+    }
+
+    /// <summary>
+	/// ゲームの初期化
+	/// </summary>
+    void Initialize()
+    {
+        score = 0;
+        Const.isPlay = true;
+        remainBlock = 66;
+        OnChangeHighScore?.Invoke(ScoreController.Instance.GetHighScore());
     }
 }

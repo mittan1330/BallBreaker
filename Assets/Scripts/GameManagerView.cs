@@ -37,6 +37,7 @@ public class GameManagerView : MonoBehaviour
 
     private void Update()
     {
+        // 各種ゲームに関わるInputの処理が行われた際に実行する処理
         if (Input.GetKey(KeyCode.RightArrow))
         {
             OnInputRight?.Invoke();
@@ -53,7 +54,6 @@ public class GameManagerView : MonoBehaviour
         {
             OnInputDown?.Invoke();
         }
-
     }
 
     public void SetScoreText(int score)
