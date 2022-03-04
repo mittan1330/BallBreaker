@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4092625970908837373}
   - component: {fileID: 4092625970908837372}
   - component: {fileID: 4092625970908837347}
-  - component: {fileID: 4421716202853139849}
   m_Layer: 0
   m_Name: BlockRed
   m_TagString: Block
@@ -97,19 +96,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4421716202853139849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4092625970908837346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 363bbe8bbd530430496cd5e8221deb8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyBlockParticle: {fileID: 2398506260811428940, guid: cc1e153e166f74ae789a1fa6cee6fa78, type: 3}
 --- !u!1 &4092625971220337367
 GameObject:
   m_ObjectHideFlags: 0

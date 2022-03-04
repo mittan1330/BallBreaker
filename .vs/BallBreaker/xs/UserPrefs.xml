@@ -1,21 +1,20 @@
 ﻿<Properties StartupConfiguration="{8565B9FA-49A2-DFF4-D6D3-DC977270F523}|">
-  <MonoDevelop.Ide.ItemProperties.Unity.Postprocessing.Runtime PreferredExecutionTarget="6e703d08-9e48-4cb6-a9cc-e0c2ef68d137" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManagerView.cs">
+  <MonoDevelop.Ide.ItemProperties.Unity.Postprocessing.Runtime PreferredExecutionTarget="b4172a68-5c09-4823-b971-6a18ae03bcc1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManagerModel.cs">
     <Files>
       <File FileName="Assets/Scripts/GameManagerView.cs" Line="40" Column="42" />
-      <File FileName="Assets/Scripts/GameManagerModel.cs" Line="102" Column="22" />
-      <File FileName="Assets/Scripts/GameManagerPresenter.cs" Line="43" Column="69" />
-      <File FileName="Assets/Scripts/PlayerManagerModel.cs" Line="63" Column="26" />
-      <File FileName="Assets/Scripts/Manager/ScoreController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManagerModel.cs" Line="20" Column="32" />
+      <File FileName="Assets/Scripts/GameManagerPresenter.cs" />
+      <File FileName="Assets/Scripts/PlayerManagerModel.cs" />
+      <File FileName="Assets/Scripts/Manager/ScoreController.cs" />
       <File FileName="Assets/Scripts/Manager/Const.cs" Line="3" Column="5" NotebookId="1" />
-      <File FileName="Assets/Scripts/BallManagerModel.cs" Line="14" Column="24" NotebookId="1" />
+      <File FileName="Assets/Scripts/BallManagerModel.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BallBreaker" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Fonts" selected="True" />
+            <Node name="Assets" expanded="True" selected="True">
               <Node name="Scripts" expanded="True" />
             </Node>
           </Node>

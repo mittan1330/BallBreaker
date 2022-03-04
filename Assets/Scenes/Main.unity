@@ -5225,10 +5225,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b7135e7f85e4692bae921dd2d5b1dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 6
-  maxWeight: 7
-  maxHeightDown: -4.3
-  maxHeightUp: 0.5
 --- !u!1 &1695409913
 GameObject:
   m_ObjectHideFlags: 0
@@ -5548,8 +5544,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22cc6ef2a904446d2a74d8f7cea62429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  gameManagerModel: {fileID: 1870418937}
 --- !u!1001 &1745219982
 PrefabInstance:
   m_ObjectHideFlags: 0
