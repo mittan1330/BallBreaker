@@ -5,13 +5,13 @@ using UnityEngine;
 public class GameManagerPresenter : MonoBehaviour
 {
     // ViewとModelを繋ぐために変数として宣言
-    [SerializeField] GameManagerModel gameManagerModel;
-    [SerializeField] PlayerManagerModel playerManagerModel;
-    [SerializeField] BallManagerModel ballManagerModel;
-    [SerializeField] GameManagerView gameManagerView;
+    [SerializeField] private GameManagerModel gameManagerModel;
+    [SerializeField] private PlayerManagerModel playerManagerModel;
+    [SerializeField] private BallManagerModel ballManagerModel;
+    [SerializeField] private GameManagerView gameManagerView;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         // Model → View
         // Modelの値の変更を監視する

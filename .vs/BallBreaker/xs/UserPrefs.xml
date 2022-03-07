@@ -1,44 +1,13 @@
-﻿<Properties StartupConfiguration="{8565B9FA-49A2-DFF4-D6D3-DC977270F523}|">
-  <MonoDevelop.Ide.ItemProperties.Unity.Postprocessing.Runtime PreferredExecutionTarget="b4172a68-5c09-4823-b971-6a18ae03bcc1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManagerModel.cs">
+﻿<Properties StartupConfiguration="{55F7391B-7912-D4C2-4242-1F08286591F4}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManagerView.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManagerView.cs" Line="40" Column="42" />
-      <File FileName="Assets/Scripts/GameManagerModel.cs" Line="20" Column="32" />
-      <File FileName="Assets/Scripts/GameManagerPresenter.cs" />
-      <File FileName="Assets/Scripts/PlayerManagerModel.cs" />
-      <File FileName="Assets/Scripts/Manager/ScoreController.cs" />
-      <File FileName="Assets/Scripts/Manager/Const.cs" Line="3" Column="5" NotebookId="1" />
-      <File FileName="Assets/Scripts/BallManagerModel.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/GameManagerModel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManagerView.cs" Line="5" Column="9" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="BallBreaker" expanded="True">
-            <Node name="Assets" expanded="True" selected="True">
-              <Node name="Scripts" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <DisabledProjects>
-    <String>UnityEngine.TestRunner.csproj</String>
-    <String>UnityEditor.TestRunner.csproj</String>
-    <String>Unity.VSCode.Editor.csproj</String>
-    <String>Unity.Timeline.csproj</String>
-    <String>Unity.TextMeshPro.Player.csproj</String>
-    <String>Unity.TextMeshPro.csproj</String>
-    <String>Unity.Postprocessing.Runtime.Player.csproj</String>
-    <String>Unity.Postprocessing.Editor.csproj</String>
-    <String>Unity.CollabProxy.Editor.csproj</String>
-    <String>Assembly-CSharp.Player.csproj</String>
-    <String>Assembly-CSharp.csproj</String>
-    <String>UnityEngine.UI.csproj</String>
-    <String>UnityEngine.TestRunner.Player.csproj</String>
-  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="73fe8264-21f8-4c59-9131-cdefe01c7202" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

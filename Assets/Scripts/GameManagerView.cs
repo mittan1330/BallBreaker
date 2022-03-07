@@ -5,18 +5,18 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class GameManagerView : MonoBehaviour
 {
-    [SerializeField] Button restartButton;
-    [SerializeField] Text scoreText;
-    [SerializeField] Text timerText;
-    [SerializeField] Text remainBlockText;
+    [SerializeField] private Button restartButton;
+    [SerializeField] private Text scoreText;
+    [SerializeField] private Text timerText;
+    [SerializeField] private Text remainBlockText;
     // PostProcessに関する変数
-    [SerializeField] PostProcessVolume postProcessVolume;
-    ChromaticAberration chromaticAberration;
+    [SerializeField] private PostProcessVolume postProcessVolume;
+    private ChromaticAberration chromaticAberration;
 
-    [SerializeField] Text highScoreText;
-    [SerializeField] Text[] gameStatusText;
-    [SerializeField] Animator gameOverTextAnimator;
-    [SerializeField] Animator gameOverButtonAnimator;
+    [SerializeField] private Text highScoreText;
+    [SerializeField] private Text[] gameStatusText;
+    [SerializeField] private Animator gameOverTextAnimator;
+    [SerializeField] private Animator gameOverButtonAnimator;
 
     // C# Action
     public event Action OnInputRight;

@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Side
-  - Head
-  - Brock
-  - GameOver
-  - Block
+  tags: []
   layers:
   - Default
   - TransparentFX

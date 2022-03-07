@@ -7,25 +7,25 @@ using UnityEngine.SceneManagement;
 public class GameManagerModel : MonoBehaviour
 {
     /// <summary> ゲームのスコアを代入する変数 </summary>
-    int score;
+    private int score;
     /// <summary> ゲームの時間を代入する変数 </summary>
-    [SerializeField] float timer = 100;
+    [SerializeField] private float timer = 100;
     /// <summary> ゲームに残ったブロックの数を代入する変数 </summary>
-    int remainBlock = 0;
+    private int remainBlock = 0;
     /// <summary> ゲームでブロックを破壊でコンボした回数を代入する変数 </summary>
-    int comboCount = 0;
+    private int comboCount = 0;
 
     //TODO:以下の部分はModelにあるのはまずそう
     /// <summary> ブロックを破壊した際のパーティクルを代入する変数 </summary>
-    [SerializeField] GameObject destroyBlockParticle;
+    [SerializeField] private GameObject destroyBlockParticle;
     /// <summary> パーティクルを生成する親にあたるTransformを指定する変数 </summary>
-    [SerializeField] Transform particlePosition;
+    [SerializeField] private Transform particlePosition;
     /// <summary> ゲームオーバーのパーティクルを代入する変数 </summary>
-    [SerializeField] GameObject gameOverParticle;
+    [SerializeField] private GameObject gameOverParticle;
     /// <summary> ボールへ追従するパーティクルを代入する変数 </summary>
-    [SerializeField] GameObject ballParticle;
+    [SerializeField] private GameObject ballParticle;
     /// <summary> ボールのゲームオブジェクトを代入する変数 </summary>
-    [SerializeField] GameObject ball;
+    [SerializeField] private GameObject ball;
 
 
     // PostProcessに関する制御変数
@@ -34,7 +34,7 @@ public class GameManagerModel : MonoBehaviour
     /// <summary> ボールのゲームオブジェクトを代入する変数 </summary>
     public bool isBreakBlockMax = false;
     /// <summary>PostProcessの値を指定する変数 </summary>
-    float postProcessValue = 0;
+    private float postProcessValue = 0;
 
     // C# Action
     public event Action<int> OnChangeScore;
@@ -47,13 +47,13 @@ public class GameManagerModel : MonoBehaviour
     public event Action OnGameEnd;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         Initialize();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         // ブロックが破壊された際にPostProcess演出の値を計算して反映用の関数を実行
         if (isBreakBlock)
@@ -149,7 +149,7 @@ public class GameManagerModel : MonoBehaviour
     /// <summary>
 	/// ゲームが終了した際の処理
 	/// </summary>
-    void GameEnd(string status)
+    private void GameEnd(string status)
     {
         Instantiate(gameOverParticle, ball.transform.position, Quaternion.identity);
         ballParticle.SetActive(false);
@@ -170,7 +170,7 @@ public class GameManagerModel : MonoBehaviour
     /// <summary>
 	/// ゲームの初期化
 	/// </summary>
-    void Initialize()
+    private void Initialize()
     {
         score = 0;
         Const.isPlay = true;

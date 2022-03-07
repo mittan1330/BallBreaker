@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerManagerModel : MonoBehaviour
 {
     /// <summary> プレイヤーの壁が上向きに移動できる上限を代入する変数 </summary>
-    float maxWeight = 7.0f;
+    private float maxWeight = 7.0f;
     /// <summary> プレイヤーの壁が下向きに移動できる上限を代入する変数 </summary>
-    float maxHeightDown = -4.3f;
+    private float maxHeightDown = -4.3f;
     /// <summary> プレイヤーの壁が横方向に移動できる上限を代入する変数 </summary>
-    float maxHeightUp = 0.5f;
+    private float maxHeightUp = 0.5f;
 
     /// <summary>
 	/// 右へ移動した際の処理
